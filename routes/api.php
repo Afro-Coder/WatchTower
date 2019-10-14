@@ -23,4 +23,7 @@ use Illuminate\Http\Request;
 
 Route::middleware('auth:api')->get('/uptime','Api\Dashboard@uptimeComponent');
 Route::middleware('auth:api')->get('/cpu_usage','Api\Dashboard@cpuLoadComponent');
-Route::middleware('auth:api')->get('/disk_usage','Api\Dashboard@diskUsageComponent');
+// Route::middleware('auth:api')->get('/disk_usage','Api\Dashboard@diskUsageComponent');
+Route::middleware('auth:api')->get('/disk_usage',function(){
+  return response()->json(array("message"=>"Disabled"));
+});
