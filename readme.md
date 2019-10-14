@@ -24,8 +24,8 @@ This uses Postgresql but you can use MySQL by changing the driver to mysql in th
 Run git clone https://github.com/Afro-Coder/WatchTower.git
 cd WatchTower
 composer update
-composer key:generate
-composer make:migration
+php artisan key:generate
+php artisan make:migration
 </pre>
 You also need to edit the .env file to add the Database details and the user details.
 
