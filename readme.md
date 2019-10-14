@@ -1,11 +1,49 @@
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a></p>
+
+# Project WatchTower
+
+## About the project
+
+This is a simple Linux dashboard, with the basic features such as CPU load, Uptime, Load Average and a simple Disk usage, disabled in a live environment for now.
+
+Its still in its basic stage, and all the settings are at the defaults.
+
+I was going to write this in Python but I wanted to learn PHP since its used every where :(.
+
+## How to set this up
+
+This uses Postgresql but you can use MySQL by changing the driver to mysql in the .env file
+<pre>
+Run git clone https://github.com/Afro-Coder/WatchTower.git
+cd WatchTower
+composer update
+composer key:generate
+composer make:migration
+</pre>
+You also need to edit the .env file to add the Database details and the user details.
+
+## Upcoming addons
+<ul>
+    <li>Log Viewer</li>
+    <li>Email alerts</li>
+    <li>Free memory</li>
+    <li>List of processes.</li>
+    <li>Nproc</li>
+    <li>Cpu Usage</li>
+    <li>Disk Usage</li>
+    <li>Inode Usage</li>
+    <li>Reading Mail logs</li>
+    <li>Filter logs</li>
+</ul>
+
+Feel free to leave your suggestions, I'm currently working as a tech support, for 9 hours a day, so this took me a long time to build.
 
 ## About Laravel
 
