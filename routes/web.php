@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('landing');
-})->middleware('auth');
+    return view('construction');
+})
+// Route::get('/', function () {
+//     return view('landing');
+// })->middleware('auth');
 
 Auth::routes(['register'=>false]);
 // Auth::routes();
