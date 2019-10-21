@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('landing');
 })->middleware('auth');
 
-Auth::routes();
 Auth::routes(['register'=>false]);
+// Auth::routes();
 
 Route::get('/apitoken','ApiTokenGenerator@index')->name('apitokengenerate')->middleware('auth');
 // Route::get('/landing', function () {
