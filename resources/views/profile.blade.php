@@ -162,22 +162,22 @@
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
-            <i class="fab fa-python"></i>
+            <i class="fab fa-python" style="color:black;"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-php"></i>
+            <i class="fab fa-php" style="color:black;"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
+            <i class="fab fa-js-square" style="color:black;"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
+            <i class="fab fa-sass" style="color:black;"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-less"></i>
+            <i class="fab fa-less" style="color:black;"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-laravel"></i>
+            <i class="fab fa-laravel" style="color:black;"></i>
           </li>
           <li class="list-inline-item">
             <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffindicons.com%2Ffiles%2Ficons%2F2773%2Fpictonic_free%2F128%2Fprog_django.png&f=1&nofb=1"  height="60" id="django"/>
