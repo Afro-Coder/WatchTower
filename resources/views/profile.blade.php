@@ -17,7 +17,7 @@
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  
+
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
 
 
@@ -286,8 +286,8 @@
 
 
   <!-- Plugin JavaScript -->
-  {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script> --}}
-  <script src="{{asset('js/jquery-easing/jquery.easing.min.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
+  {{-- <script src="{{asset('js/jquery-easing/jquery.easing.min.js') }}"></script> --}}
 
   <!-- Custom scripts for this template -->
   {{-- <script src="js/resume.min.js"></script> --}}
