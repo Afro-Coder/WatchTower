@@ -280,18 +280,18 @@
 			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			  crossorigin="anonymous"></script> --}}
 
-  <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
   {{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> --}}
 
 
 
   <!-- Plugin JavaScript -->
   {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script> --}}
-  <script src="{{asset('js/jquery-easing/jquery.easing.min.js') }}"></script>
+  <script type="text/javascript" src="{{asset('js/jquery.easing.min.js') }}"></script>
 
   <!-- Custom scripts for this template -->
   {{-- <script src="js/resume.min.js"></script> --}}
-  <script src="{{asset('js/resume.min.js')}}"></script>
+  <script  type="text/javascript" src="{{asset('js/resume.min.js')}}"></script>
 
 </body>
 
