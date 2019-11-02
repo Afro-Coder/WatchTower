@@ -275,7 +275,7 @@
   </div>
 
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="{{asset('js/jquery.min.js')}} ></script>
+  <script type="text/javascript" src="{{asset('js/jquery.min.js')}}" ></script>
   {{-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
 			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			  crossorigin="anonymous"></script> --}}
@@ -286,8 +286,8 @@
 
 
   <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
-  {{-- <script src="{{asset('js/jquery-easing/jquery.easing.min.js') }}"></script> --}}
+  {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script> --}}
+  <script src="{{asset('js/jquery-easing/jquery.easing.min.js') }}"></script>
 
   <!-- Custom scripts for this template -->
   {{-- <script src="js/resume.min.js"></script> --}}
