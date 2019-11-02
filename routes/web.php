@@ -11,9 +11,14 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('construction');
+// });
 Route::get('/', function () {
-    return view('construction');
+    return view('profile');
 });
+
+
 // Route::get('/', function () {
 //     return view('landing');
 // })->middleware('auth');
