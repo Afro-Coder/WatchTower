@@ -78,7 +78,7 @@
           <br />
           <a href="mailto:leon9923@gmail.com">leon9923@gmail.com</a>
         </div>
-        <p class="lead mb-5">Hey there!<br />I'm a Bsc.IT graduate, with a year's experience in solving web and DNS based queries. My goal is to work in automating processes and system administration.p>
+        <p class="lead mb-5">Hey there!<br />I'm a Bsc.IT graduate, with a year's experience in solving web and DNS based queries. My goal is to work in automating processes and system administration.
           </p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/leon-nunes">
