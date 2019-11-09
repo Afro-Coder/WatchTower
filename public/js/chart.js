@@ -67,7 +67,7 @@ var randomProperty = function (object) {
 };
 
 function onRefreshvar(){
-  return fetch("http://localhost/api/cpu_usage?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3",{
+  return fetch("/api/cpu_usage?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3",{
         method:'get',headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',

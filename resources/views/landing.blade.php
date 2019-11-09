@@ -178,7 +178,9 @@ text-align: center;
 
   var uptimedata = document.getElementById("uptime");
   var sysload = document.getElementById("sysload");
-  fetch("http://localhost/api/uptime?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3",
+  // var apiurl = "http://localhost/api/uptime?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3";
+  var apiurl = "{{url('/')}}/api/uptime?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3";
+  fetch(apiurl,
   {
     method:'get',
   })
@@ -216,7 +218,7 @@ text-align: center;
     loader.style.display = "inline-block";
 
     disk_data.appendChild(loader);
-    fetch("http://localhost/api/disk_usage?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3",{method:'get'})
+    fetch("{{url('/')}}/api/disk_usage?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3",{method:'get'})
     .then(function(response)
     {
       var contentType = response.headers.get('content-type');
