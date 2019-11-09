@@ -19,6 +19,9 @@ Route::get('/', function () {
 });
 
 
+Route::get('/watchtower', function () {
+    return view('landing');
+});
 // Route::get('/', function () {
 //     return view('landing');
 // })->middleware('auth');
