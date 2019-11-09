@@ -33,7 +33,9 @@ var config = {
 			}],
 			yAxes: [{
         ticks: {
-                beginAtZero: true
+                beginAtZero: true,
+                suggestedMax:100,
+                suggestedMin:0,
             },
 				scaleLabel: {
 					display: false,
