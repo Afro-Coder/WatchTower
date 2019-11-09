@@ -21,9 +21,14 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
-Route::middleware('auth:api')->get('/uptime','Api\Dashboard@uptimeComponent');
-Route::middleware('auth:api')->get('/cpu_usage','Api\Dashboard@cpuLoadComponent');
-// Route::middleware('auth:api')->get('/disk_usage','Api\Dashboard@diskUsageComponent');
-Route::middleware('auth:api')->get('/disk_usage',function(){
+Route::get('/uptime','Api\Dashboard@uptimeComponent');
+Route::get('/cpu_usage','Api\Dashboard@cpuLoadComponent');
+Route::get('/disk_usage',function(){
   return response()->json(array("message"=>"Disabled"));
 });
+// Route::middleware('auth:api')->get('/uptime','Api\Dashboard@uptimeComponent');
+// Route::middleware('auth:api')->get('/cpu_usage','Api\Dashboard@cpuLoadComponent');
+// Route::middleware('auth:api')->get('/disk_usage','Api\Dashboard@diskUsageComponent');
+// Route::middleware('auth:api')->get('/disk_usage',function(){
+//   return response()->json(array("message"=>"Disabled"));
+// });
