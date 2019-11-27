@@ -43,7 +43,7 @@ You also need to edit the .env file to add the Database details and the user det
     <li>Filter logs</li>
 </ul>
 
-Feel free to leave your suggestions, I'm currently working as a tech support, for 9 hours a day, so this took me a long time to build.
+Feel free to leave your suggestions.
 
 ## About Laravel
 
