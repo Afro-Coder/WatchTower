@@ -1,4 +1,10 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/bootstrap.min.css": "/css/bootstrap.min.css",
+    "/css/bootstrap.min.css.map": "/css/bootstrap.min.css.map",
+    "/js/bootstrap.bundle.js": "/js/bootstrap.bundle.js",
+    "/css/all.min.css": "/css/all.min.css",
+    "/js/jquery.min.js": "/js/jquery.min.js",
+    "/js/jquery.easing.min.js": "/js/jquery.easing.min.js"
 }

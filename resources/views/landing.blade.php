@@ -51,21 +51,27 @@ text-align: center;
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
+            @if (Route::has('login'))
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }} <span class="caret"></span>
             </a>
-
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ route('logout') }}"
-                   onclick="event.preventDefault();
-                                 document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
-                </a>
+              <a class="dropdown-item" href="{{ route('logout') }}"
+              onclick="event.preventDefault();
+              document.getElementById('logout-form').submit();">
+              {{ __('Logout') }}
+            </a>
 
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
-            </div>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+            </form>
+          </div>
+          @else
+            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                Test <span class="caret"></span>
+            </a>
+          @endif
+
         </li>
       </ul>
       </div>
@@ -172,7 +178,9 @@ text-align: center;
 
   var uptimedata = document.getElementById("uptime");
   var sysload = document.getElementById("sysload");
-  fetch("http://localhost/api/uptime?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3",
+  // var apiurl = "http://localhost/api/uptime?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3";
+  var apiurl = "{{url('/')}}/api/uptime?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3";
+  fetch(apiurl,
   {
     method:'get',
   })
@@ -210,7 +218,7 @@ text-align: center;
     loader.style.display = "inline-block";
 
     disk_data.appendChild(loader);
-    fetch("http://localhost/api/disk_usage?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3",{method:'get'})
+    fetch("{{url('/')}}/api/disk_usage?api_token=hrRqYthO17BfGO2Q9eYT99WkMNaTqfXDrZUxnXyh7lWigtMSjedP9PYL7nz3",{method:'get'})
     .then(function(response)
     {
       var contentType = response.headers.get('content-type');
