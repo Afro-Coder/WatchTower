@@ -9,13 +9,16 @@
 
 # Project WatchTower
 
+## Screenshots
+![2019-11-27_screenshot_16-31-19](https://user-images.githubusercontent.com/8469842/69718122-888a7100-1133-11ea-873e-4f832cf0f80f.png)
+
 ## About the project
 
 This is a simple Linux dashboard, with the basic features such as CPU load, Uptime, Load Average and a simple Disk usage, disabled in a live environment for now.
 
-Its still in its basic stage, and all the settings are at the defaults.
+Its still in its basic stage, and all the settings are at the defaults and hardcoded.
 
-I was going to write this in Python but I wanted to learn PHP since its used every where :(.
+I was going to write this in Python but I wanted to learn PHP since its used every where.
 
 ## How to set this up
 
