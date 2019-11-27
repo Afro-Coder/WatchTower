@@ -10,7 +10,8 @@
 # Project WatchTower
 
 ## Screenshots
-![2019-11-27_screenshot_16-31-19](https://user-images.githubusercontent.com/8469842/69718122-888a7100-1133-11ea-873e-4f832cf0f80f.png)
+![2019-11-27_screenshot_16-35-08](https://user-images.githubusercontent.com/8469842/69718175-afe13e00-1133-11ea-8221-33d7408fb153.png)
+
 
 ## About the project
 
